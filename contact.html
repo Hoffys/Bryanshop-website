@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products-Bryan's Shop</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="Products/Bryan.png" width="125px">
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="contact.html">Contacts</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <img src="Products/cart.png" width="30px" height="30px">
+            <img src="Products/menu.png"  class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+     
+
+    <div class="containerr">
+        <h1>Connect with me</h1>
+        <p>We would love to respond to your queries and help you succeed. Feel free to get in touch with us.</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h6>Sent your request</h6>
+                <form>
+
+                    <div class="input-row">
+                        <div class="input-group">
+                            <label>Name:</label>
+                            <input type="name" placeholder="Bryan Duran">
+                        </div>
+                        <div class="input-group">
+                            <label>Phone Number:</label>
+                            <input type="phone" placeholder="63+ 91579510719">
+                        </div>
+                        <div class="input-group">
+                            <label>Email:</label>
+                            <input type="email" placeholder="Bryanduran@gmail.com">
+                        </div>
+                        <div class="input-group">
+                            <label>Product:</label>
+                            <input type="product" placeholder="What product?">
+                        </div>
+                    </div>
+         
+                    <label>Message</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                    
+                    <button type="submit">SEND</button>
+                </form>
+            </div>
+            <div class="contact-right">
+                <h6>Reach me</h6>
+                
+                <table>
+                    <tr>
+                        <td>Email:</td>
+                        <td>Bryan.alexis.duran@adamson.edu.ph</td>
+                    </tr>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>63+ 0995 3610 795</td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td>1285 Calixto Dyco St<br>Paco Manila</td>
+                    </tr>
+
+                </table>
+
+            </div>
+        </div>
+    </div>
+    
+  
+
+ <!-------- footer -------->
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-base-1">
+                    <h3>Download My Apps</h3>
+                    <p>Download App for Android and ios mobile phone.</p>
+                    <div class="app-logo">
+                        <img src="Products/play-store.png">
+                        <img src="Products/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-base-2">
+                    <img src="Products/Bryan.png" alt="">
+                    <p>Our purpose Is To Sustainability Make the Pleasure and the Benefits of Sport Acccessible to the Many.</p>
+                </div>
+                <div class="footer-base-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>Coupons</li>
+                        <li>Blog Post</li>
+                        <li>Return Policy</li>
+                        <li>Join Affliate</li>
+                    </ul>
+                </div>
+                <div class="footer-base-4">
+                    <h3>Follow Us</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                        <li>Twitter</li>
+                        <li>Youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="Copywright">Copywright 2023-2024 - Original Shop of Bryan Shop</p>
+        </div>
+    </div>
+ <!-----------js for toggle menu----------->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px") 
+                 {
+                    MenuItems.style.maxHeight = "200px";
+                 } 
+            else 
+                 {
+                    MenuItems.style.maxHeight = "0px";
+                 }
+        }
+    </script>
+
+</body>
+</html>
